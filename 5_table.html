@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블태그</title>
+</head>
+<body>
+    <h3>테이블 태그</h3>
+    <hr>
+    <h4>시간표</h4>
+    <table border="2">
+        <thead>
+            <tr>
+                <th></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1교시</td>
+                <td>영어</td>
+                <td>음악</td>
+                <td>국어</td>
+                <td>수학</td>
+                <td>미술</td>
+            </tr>
+            <tr>
+                <td>2교시</td>
+                <td>영어</td>
+                <td>음악</td>
+                <td>국어</td>
+                <td>수학</td>
+                <td>미술</td>
+            </tr>
+            <tr>
+                <td>3교시</td>
+                <td>영어</td>
+                <td>국어</td>
+                <td>수학</td>
+                <td>과학</td>
+                <td>체육</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>1</td>
+                <th>2</th>
+                <td>2</td>
+                <td>2</td>
+                <th>2</th>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <h4>시간표 : table의 rowspan, colspan 속성</h4>
+    <table border="2">
+        <thead>
+            <tr>
+                <th></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1교시</td>
+                <td rowspan="3">영어</td>
+                <td rowspan="2">음악</td>
+                <td rowspan="2">국어</td>
+                <td>수학</td>
+                <td>미술</td>
+            </tr>
+            <tr>
+                <td>2교시</td>
+            
+            
+            
+                <td>수학</td>
+                <td>미술</td>
+            </tr>
+            <tr>
+                <td>3교시</td>
+            
+                <td>국어</td>
+                <td>수학</td>
+                <td>과학</td>
+                <td>체육</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>0</td>
+                <td  colspan="2">1</td>
+            
+                <td>3</td>
+                <td>4</td>
+                <th>5</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

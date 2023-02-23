@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input태그 : checkbox</title>
+</head>
+<body>
+    <h3>회원가입</h3>
+    <form action="">
+        <table>      
+            <tr>
+                <td><label for="name">이름</label></td>
+                <td>
+                    <input type="text" name="name" value="">
+                </td>
+            </tr> 
+            <tr>
+                <td><label for="gender">성별</label> </td>
+                <!-- name은 같은 걸로 설정! -->
+                <td>
+                    <input type="radio" name="gender" value="m">남자
+                    <input type="radio" name="gender" value="w">여자
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">관심분야</label> </td>
+                <!-- checked : 체크가 기본값-->
+                <td>
+                    <input type="checkbox" name="chk1" value="stat" checked>통계
+                    <input type="checkbox" name="chk2" value="ML">머신러닝
+                    <input type="checkbox" name="chk3" value="DML">딥러닝
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="가입">
+                </td>
+            </tr>            
+        </table>
+        <input type="date" id="birthday" name="birthday"><br>
+        <input type="datetime-local" >
+    </form>
+</body>
+</html>

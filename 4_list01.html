@@ -9,13 +9,91 @@
 <body>
     <h3>목록태그</h3>
     <ul> <!--unordered list-->
-        <li>사과</li>
-        <li>바나나</li>
-        <li>오렌지</li>
+        <li>과일
+            <ol> <!-- ordered list -->
+                <li>사과</li>
+                <li>배</li>
+                <li>바나나</li>
+            </ol>
+         </li>
+        <li>채소
+            <ul>
+                <li>배추</li>
+                <li>무우</li>
+                <li>상추</li>
+            </ul>
+        </li>
     </ul>
-    <ol> <!--ordered list-->
-        <li></li>
 
+    <hr>
+    <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/ol">순서가 있는 목록 참고</a>
+    <h4>순서가 있는 목록태그 : start="2" reversed</h4>
+    <ol start="2" reversed>
+        <li>HTML</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
     </ol>
+
+    <h4>순서가 있는 목록태그 : type="1"</h4>
+    <ol type="1">
+        <li>HTML</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <h4>순서가 있는 목록태그 : type="a"</h4>
+    <ol type="a">
+        <li>HTML</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <h4>순서가 있는 목록태그 : type="A"</h4>
+    <ol type="A">
+        <li>HTML</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <h4>순서가 있는 목록태그 : type="i"</h4>
+    <ol type="i">
+        <li>HTML</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <h4>순서가 있는 목록태그 : type="I"</h4>
+    <ol type="I">
+        <li>HTML</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <hr>
+    <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/ul">순서가 없는 목록 참고</a>
+    <ul>
+        <li>
+            순서1
+            <ul>
+                <li>
+                    순서2
+                    <ul>
+                        <li>
+                            순서3
+                            <ul>
+                                <li>
+                                    순서4
+                                    <ul>
+                                        <li>순서5</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
 </body>
 </html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./practice.css" type="text/css">
+</head>
+<body>
+    <nav>
+        <a href="./main.html">Home</a>
+        <a href="./profile.html">이력서</a>
+    </nav>
+    <h1>권예진의 이력서</h1>
+    <a href="#info">기본정보</a>
+    <a href="#grad">학력정보</a>
+    <a href="#work">직장경력</a>
+    <a href="#edu">교육내용</a>
+    <a href="#cert">어학/자격내용</a>
+    <hr>
+    <h3 id="info">기본정보</h3>
+    <table border="1">
+        <tr>
+            <th>성명</th>
+            <td>권예진</td>
+            <td rowspan="5"><img src="media/HR운영_권예진.jpg" alt="증명사진" width="100"></td>
+        </tr>
+        <tr>
+            <th>생년월일</th>
+            <td>1900년 00월 00일 (만 00세)</td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td>서울시 XX구 XX동</td>
+        </tr>
+        <tr>
+            <th>연락처</th>
+            <td>010-0000-0000</td>
+        </tr>
+        <tr>
+            <th>이메일</th>
+            <td>XXXX@naver.com</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h3 id="grad">학력정보</h3>
+    <table border="1">
+        <tr>
+            <th>학교명</th>
+            <th>전공</th>
+            <th>기간</th>
+            <th>졸업/예정</th>
+        </tr>    
+        <tr>
+            <td rowspan="2">한양대학교</td>
+            <td>주전공) 경영학부</td>
+            <td rowspan="2">
+                <input type="date" name="dt" value="2014-03-02"> - 
+                <input type="date" name="dt" value="2020-02-21">
+            </td>
+            <td rowspan="2">
+                <input type="radio" name="grad1" checked>졸업
+                <input type="radio" name="grad1" >졸업예정</td>
+            </td>
+        </tr>  
+        <tr>
+            <td>부전공) 미디어커뮤니케이션학과</td>
+        </tr>  
+        <tr>
+            <td>상명고등학교</td>
+            <td>인문계열</td>
+            <td>
+                <input type="date" name="dt" value="2010-03-02"> - 
+                <input type="date" name="dt" value="2013-02-07">
+            </td>
+            <td>
+                <input type="radio" name="grad2" checked>졸업
+                <input type="radio" name="grad2" >졸업예정</td>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h3 id="work">직장경력</h3>
+    <table border="1">
+        <tr>
+            <th>회사명</th>
+            <th>근무부서</th>
+            <th>최종직위</th>
+            <th>고용형태</th>
+            <th>기간</th>
+        </tr>
+        <tr>
+            <td>금융감독원</td>
+            <td>인사운영팀</td>
+            <td>사무보조원</td>
+            <td>계약</td>
+            <td>2020-00-00 ~ 2021-00-00 <input type="checkbox">재직 중</td>
+        </tr>
+    </table>
+    <h4>세부 경력기술</h4>
+        <p>2021년 신입 종합직원 채용 건의 사무보조원으로 근무하며 채용 전 과정을 경험하였습니다.
+            <ol>
+                <li>지원자 자기소개서 약 500여건 스크리닝</li>
+                <li>필기 및 면접 전형 장소 섭외 및 사전답사, 시험장 세팅, 현장진행</li>
+                <li>합격자 대상 증빙자료 취합, 경력 산정</li>
+                <li>기타 채용 전 과정에서 필요한 지원자와의 커뮤니케이션 및 사무보조 업무</li>
+            </ol>
+        </p>
+
+    <hr>
+    <h3 id="edu">교육내용</h3>
+        <table border="1">
+            <tr>
+                <th>내용</th>
+                <th>목적</th>
+                <th>이수시간</th>
+                <th>기간</th>
+                <th>이수여부</th>
+            </tr>
+            <tr>
+                <td>NCS 기반의 인사총무 실무 교육</td>
+                <td>직업훈련</td>
+                <td>100시간</td>
+                <td>2019-00 ~ 2019-00</td>
+                <td>
+                    <input type="radio" name="edu1" checked>이수완료 
+                    <input type="radio" name="edu1" >이수중</td>
+            </tr>
+            <tr>
+                <td>데이터 시각화 & 분석</td>
+                <td>직업훈련</td>
+                <td>980시간</td>
+                <td>2022-00 ~ 2023-00</td>
+                <td>
+                    <input type="radio" name="edu2">이수완료 
+                    <input type="radio" name="edu2" checked>이수중</td>
+            </tr>
+        </table>
+        
+    <hr>
+    <h3 id="cert">어학/자격내용</h3>
+    <table border="1">
+        <tr>
+            <th>어학/자격명</th>
+            <th>발급기관</th>
+            <th>점수/합격</th>
+            <th>취득일</th>
+        </tr>
+        <tr>
+            <td>TOEIC</td>
+            <td>ETC TOEIC</td>
+            <td>945</td>
+            <td>2021-00-00</td>
+        </tr>
+        <tr>
+            <td>컴퓨터활용능력 2급</td>
+            <td>대한상공회의소</td>
+            <td>합격</td>
+            <td>2020-00-00</td>
+        </tr>
+
+    </table>
+    <hr />
+
+    <a href="./main.html">첫 화면으로 가기</a>
+</body>
+</html>

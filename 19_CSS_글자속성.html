@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글자속성</title>
+    <style>
+        .font_arial {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-style: italic;
+            text-align: center;
+        }
+        .font_roman {
+            /* font-size: 20px; */
+            font-family: 'Times New Roman', Times, serif;
+            /* font-weight: 700; */
+            font : 2em bold;
+        }
+        .button {
+            width: 100px;
+            height: 50px;
+            background-color: orange;
+            border: 5px solid #555555 ;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 5px 5px 5px #a9a9a9;
+            /* v 중간 위치 */
+            line-height: 50px;
+        }
+        a {
+            /* v하이퍼링크 밑줄 제거 */
+            text-decoration: none;
+        }
+        ul {
+            background: goldenrod;
+            padding: 10px 10px 10px 15px;
+            list-style-position: inside;
+            /* list-style-position: outside; */
+            list-style-type : square;
+            /* list-style-image: url('media/background.png'); */
+        }
+        ul li {
+            background-color: greenyellow;
+            margin-bottom : 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="font_arial">Title 제목</h1>
+    <p class="font_roman">본문 text</p>
+    <div class="button"><a href="">click</a></div>
+    <hr>
+    <h3>CSS 속성</h3>
+    <ul>
+        <li>박스모델속성</li>
+        <li>글자크기/모양속성</li>
+        <li>폰트속성</li>
+        <li>Display속성</li>
+        <li>리스트속성</li>
+    </ul>
+</body>
+</html>

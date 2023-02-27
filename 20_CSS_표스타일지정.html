@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 스타일 지정</title>
+    <style>
+        table {
+            border : 1px solid blue;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px dotted green;
+            text-align: center;
+            padding: 0 5px;
+        }
+        tr:nth-child(2n) {
+            background-color: aquamarine;
+        }
+        thead th {
+            height: 20px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h3>표스타일 지정</h3>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>Python</th>
+                <th>Pandas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>홍길동</td>
+                <td>70</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>고길동</td>
+                <td>80</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>마이콜</td>
+                <td>100</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>방자</td>
+                <td>70</td>
+                <td>50</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>평균</th>
+                <th>80</th>
+                <th>65</th>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

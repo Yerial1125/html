@@ -12,13 +12,46 @@
         /* 구조 선택자 */
         li:first-child {color: green;}
         li:last-child {color: blue;}
-                /*   v짝수만 */
-        li:nth-child(2n) {background-color: mistyrose;}
-        li:nth-child(2n+1) {background-color: yellow;}
+                /*   v짝수번째만 */
+        li:nth-child(2n) {
+            background-color: mistyrose; 
+            font-size : 120%
+        }
+                /*   v홀수번째만 */
+        li:nth-child(2n+1) {
+            background-color: yellow;
+        }
+        li:nth-child(3) {
+            font-size: 1.5em
+        }
+        .menu li {
+            list-style : none;
+            float: left;
+            padding : 10px;
+        }
+        .menu {
+            overflow: hidden;
+        }
+        /* 상태선택자 */
+        input:enabled{background-color: mintcream;}
+        input:disabled{background-color: gray;}
+        input:focus{background-color: orange;}
+    div {
+        padding: 15px;
+    }
     </style>
 </head>
 <body>
     <h3>선택자</h3>
+    <div>
+    <ul class="menu">
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+        <li>메뉴5</li>
+    </ul>
+    </div>
     <hr>
     <ul>
         <li>전체선택자</li>
@@ -31,5 +64,9 @@
         <li>상태선택자</li>
         <li>구조선택자</li>
     </ul>
+    <h4>사용가능</h4>
+    <input type="text">
+    <h4>사용불가능</h4>
+    <input type="text" disabled>
 </body>
 </html>

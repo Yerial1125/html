@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼꾸미기</title>
+    <style>
+        input[type=text]:hover {
+            color: red;
+            background-color: yellowgreen;
+        }
+        input[type=password] {
+            color: blue;
+            background-color: gray;
+        }
+        input[type=submit] {
+            background-color: gray;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h3>폼꾸미기</h3>
+    <hr>
+    <form>
+        <label>아이디
+        <input type="text" value=""></label>
+        <br>
+        <label>패스워드
+        <input type="password" value=""></label>
+        <br>
+        <label>메모
+        <textarea placeholder="메시지 입력"></textarea></label>
+        <br>
+        <input type="submit">
+        
+    </form>
+</body>
+</html>

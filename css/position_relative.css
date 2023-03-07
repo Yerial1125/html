@@ -1,0 +1,17 @@
+/* position  속성 */
+
+section{
+    width: 300px;
+    height: 200px;
+}
+
+section:nth-of-type(1){
+    background-color: pink;
+}
+/* position : relative지정 */
+section:nth-of-type(2){
+    background-color: lightblue;
+    position: relative;
+    top: -100px;
+    left: 100px;
+}

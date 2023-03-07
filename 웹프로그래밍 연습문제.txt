@@ -1,0 +1,36 @@
+1. 
+(1) ③
+(2) ③
+(3) ①
+(4) ①
+(5) ①
+(6) ①
+(7) ① + 인라인스타일
+2. 
+(1) X
+(2) X 덜 중요하다..?
+(3) X
+(4) X
+(5) O
+(6) O
+(7) O
+(8) X
+(9) X
+(10) O
+3. 
+(1) style
+(2) 클래스, 아이디
+(3) pre
+(4) 시맨틱
+(5) /* */
+(6) autoplay
+(7) option
+(8) p
+(9) 외부 선언
+(10) 앵커
+4. 
+HTML5 : 웹페이지의 구조와 내용
+CSS3 : 웹페이지의 모양
+Javascript : 웹페이지의 행동 및 응용프로그램
+5. <link rel="stylesheet" href="Mystyle.css">
+6. <h3 style "background-color : #ff00ff">

@@ -24,11 +24,73 @@
 
         document.write('<hr><strong>do_while문</strong><br>');
         let k=0;
-        do{
+        do{         //한번은 실행
             document.write(k);
             k++;
         } while (k<10);
+
+        document.write("<hr><strong>문제1. 0~100사이의 짝수 더하기</strong><br>")
+        // let sum = 0;
+        // for(let m=0; m<100; sum=sum+m ){
+        //     m=m+2
+        // } document.write('0~100사이의 짝수를 더한 값은 '+sum)
+        let result = 0
+        for (let i=0; i<=100; i+=2){
+            result += i
+        }
+        // for (let i=0; i<=100; i++){
+        //     if(i%2==0){
+        //     result += i
+        //     }
+        // }
+        console.log(result)  // 결과를 F12의 console에 출력
+        document.write('결과는 '+ result + "<br>");
         
-    </script>
+
+        document.write("<hr><strong>문제2. while문으로 0~n까지의 합구하기</strong><br>")
+        // document.write("<em>n</em>은 prompt로 입력받아 사용<br>")
+        let n = prompt('0보다 큰 정수를 입력하세요')
+        n = parseInt(n) //n을 정수로 변환
+        let i = 0;
+        result = 0;
+        console.log(i<n)
+        while( i<n ){
+            result += i;
+            console.log(result)
+            i++;
+        } 
+        document.write('0~'+n+'사이의 숫자를 더한 값은 '+ result)
+
+        document.write("<hr><strong>문제3. 1에서 얼마까지 더해야 3000을 넘는가?</strong><br>")
+        result=0;
+        i = 1;
+        while(true){
+            result += i;
+            if (result>3000){
+                break;
+            }
+            i ++;
+        } document.write("1에서 " + i +"까지 더하면 3000이 넘는다")
+            
+        document.write("<hr><strong>문제4. 1에서 50사이의 정수 중 3으로 나눈 나머지가 1인 수만 더하기</strong><br>")
+        result=0;
+        for(let a=1; a<=50; a++){
+            if (a%3 != 1){
+                continue;
+            }
+            result += a;
+            document.write(a + ' ')
+        }
+        document.write('합은 '+result+'<br>')
+
+        document.write("<hr><strong>반복문을 이용하여 10px에서 35px 크기로 출력하기</strong><br>")
+        for(let size=10; size<=35; size++){
+            document.write("<span");
+            document.write(' style="font-size:'+ size + 'px">');
+            document.write(size + 'px');
+            document.write("</span>")
+        }
+        </script>
+        <span style="font-size:30px">스타일 적용</span><br>
 </body>
 </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>함수</h3>
+    <hr>
+    <script>
+        function add(a, b){
+            let result = 0;
+            result = a+b;
+            return result;
+        }
+        function sub(a, b){
+            let result = 0;
+            result = a-b;
+            return result;
+        }
+        
+        function mul(a, b){
+            let result = 0;
+            result = a*b;
+            return result;
+        }
+
+        function div(a, b){
+            let result = 0;
+            result = a/b;
+            return result;
+        }
+
+        let n = add(123,456);
+        document.write('<h4>add() 함수</h4>');
+        document.write('add(123, 456) = ' + n + '<br>');
+        document.write('<h4>sub() 함수</h4>');
+        document.write('sub(123, 456) = ' + sub(123,456) + '<br>');
+        document.write('<h4>mul() 함수</h4>');
+        document.write('mul(123, 456) = ' + mul(123,456) + '<br>');
+        document.write('<h4>div() 함수</h4>');
+        document.write('div(123, 456) = ' + div(123,456) + '<br>');
+
+
+        document.write("<hr><strong>문제. 단수를 입력하면 해당하는 단의 구구단 출력하기</strong><br>")
+        let dan = prompt("구구단 몇단을 출력할까요?")
+        dan = parseInt(dan)
+        function gugudan(dan){
+            if (dan >= 1 && dan <=9){
+                    document.write('구구단 '+dan+'단<br>')
+                for(let i=1; i<=9; i++){
+                    document.write(dan+' x '+i+'='+ i*dan +'<br>')
+                }
+            }
+            else document.write("1부터 9사이의 정수를 입력해주세요")
+        }
+        gugudan(dan)
+
+    </script>
+</body>
+</html>

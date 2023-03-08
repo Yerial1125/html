@@ -1,0 +1,89 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+header .inner h1{
+    display: flex;
+}
+header .inner #gnb {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end
+}
+
+header .inner #gnb li:hover{
+    background-color: lightgray;
+}
+
+header .util{
+    list-style: none;
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    display: flex;
+}
+header .util li{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end
+}
+figure {
+    position: flex;
+}
+figure video{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+figure .inner{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    align-items: center;
+    color: white;
+}
+figure .inner h1{
+    font-size: 75px;
+    color: white;
+    margin: 7px;
+}
+figure .inner p{
+    font-size: 7px;
+    color: white;
+    margin-bottom: 50px;
+}
+figure .inner a{
+    padding: 5px 100px;
+    font-size: 7px;
+    border: 1px solid;
+    color: white;
+}
+section h1{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+section #wrap {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    
+}
+
+#pic {
+    width: 20px;
+    height: 20px;;
+    float: left;
+    margin: 5px;
+}
+#pic .img {
+    object-fit: contain;
+}
+
+footer {
+    background-color: black;
+    color: gray;
+}

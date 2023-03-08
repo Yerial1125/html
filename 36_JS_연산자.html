@@ -22,23 +22,22 @@
         result4 = a != x;
         let big = (x>a)? x:a; // x가 a보다 큰가? 그렇다면 x 아니면 a 출력. 조건연산자 (삼항연산자) 
 
-
-        document.write('<h4>산술연산자</h4>')
-        document.write("x = "+ x + "<br><br>")
-        document.write("100 + x*2/4 -3 = "+ total + "<br><br>")
-        document.write("x / 10 = "+ div + "<br><br>")
-        document.write("x % 2 = "+ mod+ "<br><br>")
-        document.write('<hr><h4>대입연산자</h4>')     
-        document.write(' a=3, b=3, c=3 <br><br>')  
-        document.write('a+=3을 실행하면 '+ a + '<br><br>')
-        document.write('b*=5를 실행하면 '+ b + '<br><br>')
-        document.write('c%=2를 실행하면 '+ c + '<br><br>')
-        document.write('<hr><h4>비교연산자</h4>') 
-        document.write('a > x 실행하면 '+ result + '<br><br>') 
-        document.write('a < x 실행하면 '+ result2 + '<br><br>') 
-        document.write('a == x 실행하면 '+ result3 + '<br><br>') 
-        document.write('a != x 실행하면 '+ result4 + '<br><br>') 
-        document.write('a <= x 실행하면 '+ (a <= x) + '<br><br>') 
+        document.write('<h4>산술연산자</h4>');
+        document.write("x = "+ x + "<br><br>");
+        document.write("100 + x*2/4 -3 = "+ total + "<br><br>");
+        document.write("x / 10 = "+ div + "<br><br>");
+        document.write("x % 2 = "+ mod+ "<br><br>");
+        document.write('<hr><h4>대입연산자</h4>')   ;  
+        document.write(' a=3, b=3, c=3 <br><br>')  ;
+        document.write('a+=3을 실행하면 '+ a + '<br><br>');
+        document.write('b*=5를 실행하면 '+ b + '<br><br>');
+        document.write('c%=2를 실행하면 '+ c + '<br><br>');
+        document.write('<hr><h4>비교연산자</h4>') ;
+        document.write('a > x 실행하면 '+ result + '<br><br>') ;
+        document.write('a < x 실행하면 '+ result2 + '<br><br>') ;
+        document.write('a == x 실행하면 '+ result3 + '<br><br>') ;
+        document.write('a != x 실행하면 '+ result4 + '<br><br>') ;
+        document.write('a <= x 실행하면 '+ (a <= x) + '<br><br>') ;
         document.write('<hr><h4>논리연산자</h4>') ;
         document.write('(3>2) && (3<4) : '+ (3>2 && 3<4) + '<br><br>') ;
         document.write('(3<2) && (3<4) : '+ (3<2 && 3<4) + '<br><br>') ;
@@ -56,6 +55,16 @@
         document.write(' 10 >> 1 = '+ (10>>1) + '<br><br>') ;  
         document.write(' 10 >>> 1 = '+ (10>>>1) + '<br><br>') ;  
         document.write(' -10 >>> 1 = '+ (-10>>>1) + '<br><br>') ;  
+        document.write("<hr><h4>문자열 연결연산 '+'</h4>") ;
+        document.write(" 'abc'+ 23 => " + "abc" + 23 + "<br><br>") ;  
+        document.write("23+'abc' => "+ 23+"abc"+ "<br><br>") ;  
+        document.write("23+35+'abc' => "+ 23+35+"abc"+ "<br><br>") ;  
+        document.write("23+35 => ") ;  
+        document.write( 23+35+ "<br><br>") ;  
+        document.write('<hr><h4>문자열 비교연산 "< > == !="</h4>') ;
+        document.write("'apple' > 'banana' => "+ ('apple' > 'banana') + "<br><br>") ;
+        document.write("'bat' < 'banana' => "+ ('bat' < 'banana') + "<br><br>") ;
+        document.write("'pink' < 'ponk' => "+ ('pink' < 'ponk') + "<br><br>") ;
     </script>
 </body>
 </html>

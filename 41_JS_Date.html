@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date객체</title>
+</head>
+<body>
+    <h3>Date 객체</h3>
+    <hr>
+    <script>
+        let now = new Date();
+        console.log(now)
+        document.write('now = new Date() : '+now+'<br>')
+
+        // 월은 0~11 -> 1월~12월
+        let startDay = new Date(2022,11,1);
+        document.write('startDay = new Date(2022,11,1) : '+startDay+'<br>') 
+        document.write('now.getDate() : '+now.getDate()+'<br>')    ;
+        document.write('now.getHours() : '+now.getHours()+'<br>')   ;
+        document.write('now.getMonth() : '+now.getMonth()+'<br>')   ;
+        document.write('now.getMinutes() : '+now.getMinutes()+'<br>')   ;
+        document.write('now.getMilliseconds() : '+now.getMilliseconds()+'<br>')   ;
+        document.write('now.toLocaleDateString() : '+now.toLocaleDateString()+'<br>')   ;
+        document.write('now.toLocaleString() : '+now.toLocaleString()+'<br>')   
+
+        if(now.getSeconds() % 2 == 0){
+            document.body.style.backgroundColor = 'pink';
+        }
+        else{
+            document.body.style.backgroundColor = 'yellow';
+        }
+    </script>
+</body>
+</html>

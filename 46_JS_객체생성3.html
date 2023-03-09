@@ -27,8 +27,10 @@
 <body>
     <h3>prototype으로 사용자 객체 생성</h3>
     <hr>
-    <script>
+    <script>        
         let account = new Account('홍길동', 123, 30000);
+        console.log(typeof account);
+
         document.write('account객체 <br> ');
         document.write('account.owner : ' +account.owner +'<br>');
         document.write('account.code : ' +account.code +'<br>');

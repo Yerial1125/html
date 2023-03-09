@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로토타입</title>
+    <script>
+        //prototype으로 사용자 객체 생성
+        // 학생 객체 student
+        function Student(name, depart, gender){
+            this.name = name;
+            this.depart = depart;
+            this.gender = gender;
+            this.study = function(){
+                document.write(this.name+'이 열심히 공부하다')
+            }
+        }
+
+        // 자동차 my car
+        function Mycar(model, year, color, speed){
+            this.model = model;
+            this.year = year;
+            this.color = color;
+            this.speed = speed;
+            this.drive = function (){
+                return this.speed + "km/h로 운행하다"
+            },
+            this.speedUp = function(value){
+                this.speed += value;
+            },
+            this.speedDown = function(value){
+                this.speed -= value;
+            }
+        }
+     
+
+    </script>
+</head>
+<body>
+    <h3>프로토타입으로 사용자 객체 생성</h3>
+    <hr>
+    <script>
+        let student = new Student('홍길동','데이터분석','남')
+        document.write('<strong>student 객체 </strong><br>')
+        document.write('student.name : ' + student.name +'<br>');
+        document.write('student.depart : ' + student.depart +'<br>');
+        document.write('student.gender : ' + student.gender +'<br>');
+        student.study();
+        
+
+        let mycar = new Mycar('BM', 2000, 'red', 0)
+        document.write('<hr><strong>mycar 객체 </strong><br>')
+        document.write('mycar.model : ' + mycar.model +'<br>');
+        document.write('mycar.year : ' + mycar.year +'<br>');
+        document.write('mycar.color : ' + mycar.color +'<br>');
+        document.write('mycar.speed : ' + mycar.speed +'<br>');
+        document.write('60km/h 가속 후 <br>')
+        mycar.speedUp(60);
+        document.write('mycar.speed : ' + mycar.drive() + '<br>')
+        document.write('30km/h 감속 후 <br>')
+        mycar.speedDown(30);
+        document.write('mycar.speed : ' + mycar.drive() + '<br>')
+
+    </script>
+</body>
+</html>

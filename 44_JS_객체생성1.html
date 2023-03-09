@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new Object</title>
+    <script>
+        // new Object로 객체 생성
+        // 잔금조회함수
+        function inquiry(){
+            return this.balance;
+        }
+        // 입금
+        function deposit(money){
+            this.balance += money;
+        }
+        // 출금
+        function withdraw(money){
+            this.balance -= money;
+        }
+
+        let account = new Object();
+        account.owner = '홍길동';
+        account.code = 123;
+        account.balance = 30000;
+        account.inquiry = inquiry;
+        account.deposit = deposit;
+        account.withdraw = withdraw;
+    </script>
+</head>
+<body>
+    <h3>new Object()로 사용자 객체 생성</h3>
+    <hr>
+    <script>
+        document.write('account객체 <br> ');
+        document.write('account.owner : ' +account.owner +'<br>');
+        document.write('account.code : ' +account.code +'<br>');
+        document.write('account.balance : ' +account.balance +'<br>');
+        document.write('100000원 입금 후<br>')
+        account.deposit(100000);
+        document.write('account.balance : ' +account.inquiry() +'<br>');
+        document.write('50000원 출금 후<br>')
+        account.withdraw(50000);
+        document.write('account.balance : ' +account.inquiry() +'<br>');
+
+        
+    </script>
+
+</body>
+</html>

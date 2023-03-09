@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math객체 : 구구단</title>
+    <script>
+        // Math.ceil() : 올림
+        // Math.round() : 반올림
+        // Math.floor() : 내림
+        // 1~9사이의 정수난수 발생
+        function randNum() {
+            return Math.floor(Math.random()*9) + 1; //random : 0~1 사이의 실수 생성
+        }
+    </script>
+</head>
+<body>
+    <h3>Math객체를 이용한 구구단 문제</h3>
+    <hr>
+    <script>
+        let question = randNum() + "*" + randNum();
+        let user = prompt(question + "값은 얼마입니까?");
+        let answer = eval(question) ;
+        if (user == null) { 
+            //취소 버튼 클릭
+            document.write("구구단 연습을 종료합니다!");
+        } else {
+        if (answer == user) {
+            document.write('정답입니다!<br>');
+        } else{
+            document.write('오답입니다..<br>');
+        }
+        document.write(
+            question + ' = <strong>' + answer + '</strong>입니다.<br>'
+            );
+        }
+    </script>
+</body>
+</html>

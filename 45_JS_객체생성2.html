@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>literal</title>
+    <script>
+        // 리터럴 표기법으로 객체 생성
+        let account = {
+            owner : '홍길동',
+            code : 123,
+            balance : 30000,
+            inquiry : function (){ 
+                return this.balance;
+            },        
+            deposit : function (money) {
+                this.balance += money;
+            },
+            withdraw : function (money) {
+                this.balance -= money;
+            }
+        };
+
+    </script>
+</head>
+<body>
+    <h3>리터럴로 사용자 객체 생성</h3>
+    <hr>
+    <script>
+        document.write('account객체 <br> ');
+        document.write('account.owner : ' +account.owner +'<br>');
+        document.write('account.code : ' +account.code +'<br>');
+        document.write('account.balance : ' +account.balance +'<br>');
+        document.write('100000원 입금 후<br>')
+        account.deposit(100000);
+        document.write('account.balance : ' +account.inquiry() +'<br>');
+        document.write('50000원 출금 후<br>')
+        account.withdraw(50000);
+        document.write('account.balance : ' +account.inquiry() +'<br>');
+
+    </script>
+</body>
+</html>

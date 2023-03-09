@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document 객체</title>
+    <script>
+        let text = '문서 로딩중';
+        function printProperties(){
+            document.getElementById('input').focus();
+            let text = 'location : ' + document.location + '\n';
+            text += 'URL : ' +  document.URL + '\n'
+            text += 'title : ' +  document.title + '\n'
+            text += 'body의 color : ' +  document.body.style.color + '\n'
+            text += 'domain : ' +  document.domain + '\n'
+            text += 'readyState : ' + document.readyState
+            alert(text);
+        }
+
+        // document.write(text);
+
+    </script>
+</head>
+<body style="background-color: aliceblue; color: teal;"
+onload="printProperties()">
+    <h3>document 객체</h3>
+    <hr>
+    <div>document객체의 주요 속성(properties)</div>
+    <a href="https://www.naver.com">네이버</a><br>
+    <input type="text" id="input" value="여기에 포커스">
+
+    <script>
+
+    </script>
+</body>
+</html>

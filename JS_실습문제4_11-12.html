@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11,12번</title>
+</head>
+<body>
+    <h3>11,12번문제</h3>
+    <br>
+    <script>
+        let list = new Array(5)
+        for(let i=0; i<5; i++) {
+            list[i] = prompt('정수 입력')
+        }
+        document.write('<h3>정수 5개 입력 받아 역순으로 출력</h3><hr>')
+        document.write('입력된 수의 배열<br>'+list+'<hr>')
+        document.write('역순으로 재정렬된 배열<br>'+list.reverse()+'<hr>')
+        
+        let now = new Date();
+        let day = ['일','월','화','수','목','금','토'];
+        document.write('<h3>일요일은 pink, 다른 요일은 gold배경</h3><hr>')
+        document.write('오늘 : ' +now.getDate() +'일 '+ day[now.getDay()] + '요일<hr>') 
+        if (now.getDay() == 0){
+            document.body.style.backgroundColor = 'pink';
+        }
+        else{
+        document.body.style.backgroundColor = 'gold';
+      
+        }
+    
+    </script>
+</body>
+</html>

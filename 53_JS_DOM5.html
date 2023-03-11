@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서동적구성</title>
+    <script>
+        function createDIV(){
+            let obj = document.getElementById('parent');
+            let newDIV = document.createElement('div');
+            newDIV.innerHTML = '새로 생성된 DIV';
+            newDIV.style.color = 'pink';
+            newDIV.setAttribute('id','myDIV');
+            newDIV.style.backgroundColor = 'yellow';
+            newDIV.onclick = function(){
+                let p = this.parentElement;
+                p.removeChild(this);
+            }
+            obj.appendChild(newDIV);
+        }
+    </script>
+</head>
+<body id="parent">
+    <h3>문서 동적 구성 : 삽입&삭제</h3>
+    <hr>
+    <h4>객체를 동적으로 생성하기 위한 메서드</h4>
+    <ul>
+        <li>createElement()</li>
+        <li>appendElement()</li>
+        <li>removeElement()</li>
+    </ul>
+    <a href="javascript:createDIV()">DIV생성</a>
+</body>
+</html>

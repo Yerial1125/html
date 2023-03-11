@@ -1,0 +1,6 @@
+div{
+    display: inline;
+    width: 60px;
+    height: 10px;
+    background-color: colorNames[0];
+}

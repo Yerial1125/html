@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제4</title>
+    <script>
+        // 9번 문제
+        function fill() { 
+            this.amount += 2; 
+        }
+        function consume() { 
+            this.amount -= 2; 
+        }
+
+        let box = new Object();
+        box.color = 'red';
+        box.size = 10;
+        box.amount = 0;
+        box.fill = fill;
+        box.consume = consume
+
+        // 10번 문제
+        function Box(color, size, amount){
+            this.color =color;
+            this.size = size;
+            this.amount = amount;
+            this.fill = function(){
+                this.amount += 2;
+            }
+            this.consume = function(){
+                this.amount -= 2;
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <p>3, 4, 4, 4, 2, 4, 4 <br>
+        8. random은 임의의 실수를 반환하기 때문데 정수 값으로 변환하기 위해서는 Math.ceil()/.round()/.floor()를 사용해야한다.<br>
+        -> Math.floor(Math.random()*10)+1<br>
+        9. <br>
+        let student = {
+            id : 1,
+            name :'hong',
+            grade : 'A'
+        }
+    </p>
+    <script>
+        document.write('10번 문제<br>')
+        let mybox = new Box('red',10,0)
+        document.write('mybox.color : '+ mybox.color + '<br>')
+        document.write('mybox.size : '+ mybox.size + '<br>')
+
+    </script>
+</body>
+</html>

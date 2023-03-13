@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>텍스트가 반복 회전</h3>
+    <hr>
+    <div>
+        <span id="span" style="background-color: yellow;">자동회전하는 텍스트입니다. </span>
+    </div>
+    <!-- setInterval('timeoutcode', msec) 
+        msec주기로 timeoutcode를 무한 반복하도록 타이머를 설정
+        clearInterval() :
+        timerID의 타이머를 해제
+    -->
+    <script>
+        let span = document.getElementById("span");
+        let timerID = setInterval("doRotate()", 200);
+
+        function doRotate(){
+            let str = span.innerHTML;
+            let firstChar = str.substr(0,1);
+            let remains = str.substr(1, str.length-1);
+            str = remains + firstChar;
+            span.innerHTML = str;
+        }
+
+        span.onclick = function(e){
+            clearInterval(timerID);
+        }
+    </script>
+</body>
+</html>
